@@ -232,7 +232,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 30%;
+  max-width: 35%;
   margin-inline: 3%;
   margin-block: 8%;
   position: relative;
@@ -244,7 +244,7 @@
 }
 @media (min-width: 767px) {
   .mainFormWrapper .mainFormComponent {
-    min-width: 330px;
+    min-width: 400px;
   }
 }
 .mainFormWrapper .mainFormComponent form {
