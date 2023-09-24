@@ -1,0 +1,64 @@
+.footerWrapper {
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
+    @include tablet {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+    gap: 2vh;
+    border-top: 4px solid $footer-border;
+
+    margin-top: 2vh;
+    padding-top: 1vh;
+    @include tablet {
+        padding-bottom: 3vh;
+    }
+    color: $footer-border;
+
+    line-height: 150%;
+
+    .footerAddress {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vh;
+    }
+    .footerSocial {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        a {
+            height: 30px;
+            width: 30px;
+        }
+        .footerSocialLinkedIn {
+            background-color: $linkedIn-color;
+        }
+        .footerSocialTwitter {
+            background-color: $twitter-color;
+        }
+    }
+    .footerLinks {
+        padding-bottom: 2vh;
+        a {
+            color: $contact-color;
+            @include mobile {
+                font-size: $font-small-size;
+            }
+            @include desktop {
+                font-size: $font-normal-size;
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        gap: 2vw;
+        align-items: center;
+    }
+    span {
+        display: block;
+    }
+}

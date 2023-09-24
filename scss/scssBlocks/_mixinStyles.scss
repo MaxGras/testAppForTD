@@ -1,0 +1,75 @@
+@mixin buttonOrder {
+    background-color: $button-color;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    @include mobile{
+        font-size: $mobile-font-normal-size;
+    }
+    @include tablet{
+        font-size: $font-normal-size;
+    }
+}
+
+@mixin headerSpanGradient{
+    background: -webkit-linear-gradient(0deg, #1bb147 40.22%, #018ed5 60.68%);
+    background-clip: text;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $font-huge-header-size;
+    font-weight: 800;
+    @include mobile{
+        font-size:$font-header-size;
+    }
+    @include tablet{
+        font-size:$font-huge-header-size;
+    }
+    
+}
+
+@mixin paragraphSectionStyle{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+   
+    p {
+        color: $text-color;
+        text-align: left;
+        @include mobile{
+            font-size: $mobile-font-normal-size;
+        }
+        
+        @include tablet{
+            font-size: $font-normal-size;
+        }
+        @include desktop{
+            font-size:$desktop-normal-size;
+        }
+    }
+}
+
+@mixin smallSpan{
+    font-family: $thin-font;
+        font-weight: 100;
+       
+        @include mobile{
+            font-size: $mobile-font-small-size;
+        }
+           
+        @include tablet{
+            font-size:$font-small-size;
+        }
+        @include desktop{
+            font-size:$font-normal-size;
+        }
+
+   
+}
+@mixin skipDefaultStyles{
+    outline: none;
+        border: none;
+        
+}

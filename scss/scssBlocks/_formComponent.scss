@@ -1,0 +1,120 @@
+.mainFormWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 100%;
+    .mainFormComponent {
+        background-image: url("../../assets/images/formBackGround.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       @include mobile{
+        min-width: 250px;
+       }
+       @include tablet{
+        min-width: 330px;
+       }
+        max-width: 30%;
+        
+    
+   
+       
+        margin-inline: 3%;
+        margin-block: 8%;
+        position: relative;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2vh;
+            padding-block: 10%;
+            label {
+                font-weight: 700;
+                @include mobile {
+                    font-size: $mobile-font-header-size;
+                }
+                @include tablet {
+                    font-size: $font-header-size;
+                }
+                text-transform: uppercase;
+                margin-bottom: 8%;
+                color: #fff;
+                span {
+                    width: inherit;
+                    display: block;
+                    background: linear-gradient(90deg, #1bb147 10.22%, #018ed5 104.68%);
+                    height: 3px;
+                }
+            }
+
+            input {
+                @include skipDefaultStyles;
+                padding: 4%;
+                width: 80%;
+                @include mobile {
+                    font-size: $mobile-font-normal-size;
+                }
+                @include tablet {
+                    font-size: $font-normal-size;
+                }
+                @include desktop{
+                    font-size: $desktop-normal-size ;
+                }
+            }
+            button {
+                @include buttonOrder;
+                width: 80%;
+                padding: 5%;
+            }
+            .iti {
+                width: 100%;
+                text-align: center;
+                .iti__selected-flag {
+                    padding: 0;
+                    background-color: $grayForModal;
+                    width: 100%;
+                    margin: 0 auto;
+                    justify-content: center;
+                }
+                .iti__selected-dial-code {
+                    text-align: center;
+                    font-weight: 400;
+                }
+                .iti__flag {
+                    background-image: none;
+                    box-shadow: none;
+                    background-color: transparent;
+                }
+                .iti__flag-container {
+                    left: 10%;
+                    padding: 0;
+                    @include mobile{
+                        width: 21%;
+                    }
+                    @include desktop{
+                        width: 15%;
+                    }
+                }
+                .iti__arrow {
+                    border: none;
+                }
+            }
+        }
+
+        .formBackGroundDesign {
+            background-image: url("../../assets/images/formBackGroundDesign.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 101%;
+            height: 102%;
+            top: -1%;
+            z-index: -4;
+            transform: rotate(2.5deg);
+            position: absolute;
+        }
+        #second_form_design {
+            transform: rotate(-2.5deg);
+        }
+    }
+}

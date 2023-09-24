@@ -1,0 +1,21 @@
+
+// Normalizing styles + width container
+@import "./scssBlocks/normilizeContainer";
+// media query
+@import "./scssBlocks/_breakpoints";
+// color variables
+@import "./scssBlocks//variables";
+// mixin for reuseable components
+@import"./scssBlocks/mixinStyles";
+// components
+@import "./scssBlocks/_headerComponent";
+@import "./scssBlocks/informationComponent";
+@import"./scssBlocks/formComponent";
+@import "./scssBlocks/aboutProjectDescrp";
+@import"./scssBlocks/aboutCompanyDescrp";
+@import "./scssBlocks/sliderContainer";
+@import "./scssBlocks/paymentComponent";
+@import"./scssBlocks/advantagesComponent";
+@import "./scssBlocks/footerComponent";
+
+

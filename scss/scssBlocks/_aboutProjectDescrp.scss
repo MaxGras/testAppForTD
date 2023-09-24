@@ -1,0 +1,94 @@
+.mainAboutProjectDescription {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: auto;
+
+    
+    @include desktop {
+        margin-top: 10vh;
+    }
+
+   div{
+    @include mobile{
+        width: 100%;
+    }
+    @include tablet{
+        width: 60%;
+    margin-left: auto;
+    }
+    h2 {
+        @include headerSpanGradient;
+
+        @include mobile {
+            text-align: center;
+            width: 100%;
+        }
+        @include tablet {
+            width: fit-content;
+            text-align: left;
+            padding-inline: 3vw;
+            
+        }
+    }}
+    .descriptionParagraphSection {
+        @include paragraphSectionStyle;
+        @include tablet {
+            width: 60%;
+            margin-left: auto;
+        }
+        padding-left: 3vw;
+        padding-right: 6vw;
+        line-height: 150%;
+        :last-child {
+            font-weight: 700;
+        }
+        padding-block: 2vh;
+    }
+
+    img {
+       bottom: 0%;
+        @include mobile {
+            margin: 0 auto;
+            width: 60%;
+        }
+        @include tablet {
+            position: absolute;
+            
+            left: -150px;
+            width: 500px;
+        }
+        @include desktop {
+            left: -100px;
+            width: 560px;
+        }
+        @include big-width-screen {
+            left: -120px;
+          
+            width: 670px;
+            object-fit: fill;
+        }
+     
+    }
+    .descriptionNameSection {
+        background: linear-gradient(90deg, #1bb147 10.22%, #018ed5 104.68%);
+        width: 100%;
+        padding: 2%;
+        span {
+            @include tablet {
+                width: 60%;
+                text-align: left;
+                margin-left: auto;
+                padding-inline: 3vw;
+            }
+            display: block;
+            color: #fff;
+        }
+        :first-child {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.1em;
+        }
+    }
+}

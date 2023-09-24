@@ -1,0 +1,68 @@
+.mainAboutCompanyDescription {
+    background-image: url("../../assets/images/companyDescrpBackGround.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    padding-block: 4%;
+    background-repeat: no-repeat;
+    h2 {
+        @include mobile {
+            text-align: center;
+        }
+
+        @include tablet {
+            text-align: left;
+            width: fit-content;
+            padding-inline: 6vw;
+        }
+        @include headerSpanGradient;
+    }
+    .descriptionParagraphSection {
+        @include paragraphSectionStyle;
+        @include mobile {
+            padding-inline: 3vw;
+        }
+        @include tablet {
+            width: 65%;
+            padding-left: 6vw;
+            padding-right: 0;
+        }
+
+        p {
+            color: #fff;
+            line-height: 150%;
+        }
+    }
+    .descrptionButtonWrapper {
+        display: flex;
+        justify-content: center;
+        button {
+            @include buttonOrder;
+            @include mobile {
+                width: 80%;
+                padding: 3%;
+            }
+            @include tablet {
+                width: 40%;
+                padding: 2%;
+            }
+            @include tablet {
+                width: 30%;
+                padding: 2%;
+            }
+        }
+    }
+
+    .descriptionSmallSizeParagraph {
+        font-size: $mobile-font-small-size;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        padding-inline: 3vw;
+        span {
+            display: block;
+        }
+    }
+}

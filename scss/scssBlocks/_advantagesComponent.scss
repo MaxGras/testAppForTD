@@ -1,0 +1,85 @@
+.mainAdvantagesComponent {
+    background-image: url("../../assets/images/tubesBackGround.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    gap: 4vh;
+    padding-block: 4vh;
+
+    @include mobile {
+        flex-direction: column;
+        padding-inline: 4vw;
+        padding-block: 4vh;
+    }
+    @include tablet {
+        flex-direction: row;
+        padding-inline: 6vw;
+        padding-block: 10vh;
+    }
+    color: #fff;
+
+    h3 {
+        font-size: $font-header-size;
+        font-family: $thin-font;
+        font-weight: 600;
+    }
+    .advantagesList {
+        display: flex;
+        flex-direction: column;
+        padding-top: 6%;
+        gap: 4vh;
+        .advantagesListItem {
+            display: flex;
+            align-items: center;
+            gap: 2vh;
+            .advantagesItemImage {
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 8px;
+            }
+            .advantagesItemSign {
+                @include mobile {
+                    font-size: $mobile-font-normal-size;
+                }
+                @include desktop {
+                    font-size: $font-normal-size;
+                }
+            }
+        }
+    }
+
+    .advantagesProfitWrapper {
+        @include mobile {
+            padding: 4%;
+        }
+        @include tablet {
+            padding: 2%;
+        }
+        background-color: #fff;
+        color: $text-color;
+        font-family: $thin-font;
+        border-radius: 15px;
+        @include tablet {
+            h3 {
+                padding-left: 3%;
+                font-size: $font-header-size;
+            }
+        }
+        ol {
+            padding-block: 2vh;
+            padding-left: 12%;
+
+            li {
+                @include mobile {
+                    font-size: $mobile-font-normal-size;
+                    padding: 5px;
+                }
+                @include desktop {
+                    font-size: $font-normal-size;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

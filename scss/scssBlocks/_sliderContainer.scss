@@ -1,0 +1,98 @@
+.mainCommentContainer {
+    background-color: #fff;
+    padding-block: 3vh;
+  
+    h2 {
+        @include headerSpanGradient;
+        text-align: center;
+        
+       
+    }
+
+    .commentSliderContainer {
+        padding-top: 3vh;
+        padding-inline: 2vw;
+        .commentSliderItem {    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5vh;
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+               @include mobile{
+                width: 100px;
+               }
+               @include tablet{
+                 width: 150px;
+               
+               } 
+            }
+            p{
+                @include mobile{
+                    font-size: $mobile-font-small-size;
+                }
+                @include tablet{
+                    font-size: $font-normal-size;
+                }
+                @include desktop{
+                    font-size: $desktop-normal-size;
+                }
+                }  
+            .commentItemAvatarInfo {
+                color: $text-color;
+              
+                @include tablet{
+                    font-size: $font-normal-size;
+                }
+                @include desktop{
+                    font-size: $desktop-normal-size;
+                }
+                font-weight: 700;
+                text-transform: uppercase;
+                .commentItemAvatarAge {
+                    text-transform: none;
+                    display: block;
+                    font-weight: 400;
+                    font-size: $font-small-size;
+                }
+                
+            }
+        }
+    }
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        width: fit-content;
+      @include mobile{
+        gap: 5vw;
+      }
+      @include desktop{
+        gap: 2vw;
+      }
+      
+        margin: 0 auto;
+        padding-top: 6vh;
+        
+        li {
+          
+            background: rgba(24, 24, 24, 0.1);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            &.slick-active {
+                background: linear-gradient(0deg, #1bb147 10.22%, #018ed5 104.68%);
+            }
+            button {
+                @include skipDefaultStyles;
+                width: 100%;
+                color: transparent;
+                cursor: pointer;
+                background: transparent
+            }
+        }
+    }
+}

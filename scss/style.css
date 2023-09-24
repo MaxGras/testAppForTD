@@ -1,0 +1,1096 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.headerComponent .headerBackDesign {
+  background-image: url("../../assets/images/headerBackGround.png");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: left;
+  justify-content: space-between;
+}
+@media (min-width: 0px) {
+  .headerComponent .headerBackDesign {
+    padding-block: 3%;
+  }
+}
+@media (min-width: 1023px) {
+  .headerComponent .headerBackDesign {
+    padding-block: 1%;
+  }
+}
+.headerComponent h1 {
+  font-weight: 400;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 360px) {
+  .headerComponent h1 {
+    width: 60%;
+  }
+}
+@media (min-width: 0px) {
+  .headerComponent h1 {
+    font-size: 1em;
+  }
+}
+@media (min-width: 767px) {
+  .headerComponent h1 {
+    font-size: 1.5em;
+    padding-left: 2vw;
+  }
+}
+.headerComponent .hamburgerWrapper {
+  display: none;
+  cursor: pointer;
+}
+.headerComponent .hamburgerWrapper .hamburgerBar {
+  display: block;
+  background-color: white;
+  border-radius: 27px;
+  width: 40px;
+  height: 3px;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+.headerComponent .navigationMenu {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.headerComponent .navigationMenu .menuItem {
+  color: #181818;
+  font-weight: 500;
+}
+@media (min-width: 0px) {
+  .headerComponent .navigationMenu .menuItem {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 767px) {
+  .headerComponent .navigationMenu .menuItem {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px) {
+  .headerComponent .navigationMenu .menuItem {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 0px) {
+  .headerComponent .navigationMenu {
+    flex-direction: column;
+    padding-block: 5%;
+    gap: 2%;
+  }
+  .headerComponent .hamburgerWrapper {
+    padding-right: 3%;
+    display: block;
+  }
+  .headerComponent .hamburgerWrapper.active .hamburgerBar:nth-child(2) {
+    opacity: 0;
+  }
+  .headerComponent .hamburgerWrapper.active .hamburgerBar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  .headerComponent .hamburgerWrapper.active .hamburgerBar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .headerComponent .navigationMenu {
+    position: fixed;
+    right: -100%;
+    z-index: 10;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    width: 60%;
+    transition: 0.3s;
+  }
+  .headerComponent .navigationMenu.active {
+    right: 0%;
+  }
+}
+@media (min-width: 1023px) {
+  .headerComponent .hamburgerWrapper {
+    display: none;
+  }
+  .headerComponent .navigationMenu {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    background-color: #fff;
+    width: 100%;
+    padding-block: 1vh;
+    padding-inline: 4vw;
+    border: 1px solid transparent;
+    border-image-source: linear-gradient(90deg, #1bb147 10.22%, #018ed5 104.68%);
+    border-image-slice: 2;
+    border-top: none;
+  }
+}
+
+.mainInformationWrapper {
+  display: flex;
+  width: 100%;
+}
+@media (min-width: 0px) {
+  .mainInformationWrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1023px) {
+  .mainInformationWrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-inline: 5vw;
+    padding-block: 2vh;
+    gap: 8%;
+  }
+}
+.mainInformationWrapper .mainInformationComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2%;
+}
+@media (min-width: 1023px) {
+  .mainInformationWrapper .mainInformationComponent {
+    min-width: 30%;
+    max-width: 50%;
+  }
+}
+.mainInformationWrapper .mainInformationComponent h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.mainInformationWrapper .mainInformationComponent .informationPartners {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-inline: 6%;
+}
+.mainInformationWrapper .mainInformationComponent .informationPartners img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-width: 100px;
+  width: 20%;
+  max-height: auto;
+}
+.mainInformationWrapper .mainInformationComponent .informationPartners #imageOfInformation_1 {
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-width: 175px;
+  width: 60%;
+}
+.mainInformationWrapper .mainInformationComponent .informationVideoWrapper {
+  width: 100%;
+}
+@media (min-width: 767px) {
+  .mainInformationWrapper .mainInformationComponent .informationVideoWrapper {
+    padding-inline: 6%;
+  }
+}
+@media (min-width: 1023px) {
+  .mainInformationWrapper .mainInformationComponent .informationVideoWrapper {
+    padding-inline: 0%;
+  }
+}
+.mainInformationWrapper .mainInformationComponent .informationVideoWrapper .informationVideo {
+  background-color: #D9D9D9;
+  width: 100%;
+  margin-block: 1.5vh;
+  aspect-ratio: 16/9;
+}
+
+.mainFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.mainFormWrapper .mainFormComponent {
+  background-image: url("../../assets/images/formBackGround.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 30%;
+  margin-inline: 3%;
+  margin-block: 8%;
+  position: relative;
+}
+@media (min-width: 0px) {
+  .mainFormWrapper .mainFormComponent {
+    min-width: 250px;
+  }
+}
+@media (min-width: 767px) {
+  .mainFormWrapper .mainFormComponent {
+    min-width: 330px;
+  }
+}
+.mainFormWrapper .mainFormComponent form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding-block: 10%;
+}
+.mainFormWrapper .mainFormComponent form label {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8%;
+  color: #fff;
+}
+@media (min-width: 0px) {
+  .mainFormWrapper .mainFormComponent form label {
+    font-size: 1em;
+  }
+}
+@media (min-width: 767px) {
+  .mainFormWrapper .mainFormComponent form label {
+    font-size: 1.5em;
+  }
+}
+.mainFormWrapper .mainFormComponent form label span {
+  width: inherit;
+  display: block;
+  background: linear-gradient(90deg, #1bb147 10.22%, #018ed5 104.68%);
+  height: 3px;
+}
+.mainFormWrapper .mainFormComponent form input {
+  outline: none;
+  border: none;
+  padding: 4%;
+  width: 80%;
+}
+@media (min-width: 0px) {
+  .mainFormWrapper .mainFormComponent form input {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 767px) {
+  .mainFormWrapper .mainFormComponent form input {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainFormWrapper .mainFormComponent form input {
+    font-size: 1.2em;
+  }
+}
+.mainFormWrapper .mainFormComponent form button {
+  background-color: #FA0606;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 80%;
+  padding: 5%;
+}
+@media (min-width: 0px) {
+  .mainFormWrapper .mainFormComponent form button {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 767px) {
+  .mainFormWrapper .mainFormComponent form button {
+    font-size: 1em;
+  }
+}
+.mainFormWrapper .mainFormComponent form .iti {
+  width: 100%;
+  text-align: center;
+}
+.mainFormWrapper .mainFormComponent form .iti .iti__selected-flag {
+  padding: 0;
+  background-color: #D9D9D9;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.mainFormWrapper .mainFormComponent form .iti .iti__selected-dial-code {
+  text-align: center;
+  font-weight: 400;
+}
+.mainFormWrapper .mainFormComponent form .iti .iti__flag {
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.mainFormWrapper .mainFormComponent form .iti .iti__flag-container {
+  left: 10%;
+  padding: 0;
+}
+@media (min-width: 0px) {
+  .mainFormWrapper .mainFormComponent form .iti .iti__flag-container {
+    width: 21%;
+  }
+}
+@media (min-width: 1023px) {
+  .mainFormWrapper .mainFormComponent form .iti .iti__flag-container {
+    width: 15%;
+  }
+}
+.mainFormWrapper .mainFormComponent form .iti .iti__arrow {
+  border: none;
+}
+.mainFormWrapper .mainFormComponent .formBackGroundDesign {
+  background-image: url("../../assets/images/formBackGroundDesign.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 101%;
+  height: 102%;
+  top: -1%;
+  z-index: -4;
+  transform: rotate(2.5deg);
+  position: absolute;
+}
+.mainFormWrapper .mainFormComponent #second_form_design {
+  transform: rotate(-2.5deg);
+}
+
+.mainAboutProjectDescription {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: auto;
+}
+@media (min-width: 1023px) {
+  .mainAboutProjectDescription {
+    margin-top: 10vh;
+  }
+}
+@media (min-width: 0px) {
+  .mainAboutProjectDescription div {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription div {
+    width: 60%;
+    margin-left: auto;
+  }
+}
+.mainAboutProjectDescription div h2 {
+  background: -webkit-linear-gradient(0deg, #1bb147 40.22%, #018ed5 60.68%);
+  background-clip: text;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.9em;
+  font-weight: 800;
+}
+@media (min-width: 0px) {
+  .mainAboutProjectDescription div h2 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription div h2 {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 0px) {
+  .mainAboutProjectDescription div h2 {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription div h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: left;
+    padding-inline: 3vw;
+  }
+}
+.mainAboutProjectDescription .descriptionParagraphSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-left: 3vw;
+  padding-right: 6vw;
+  line-height: 150%;
+  padding-block: 2vh;
+}
+.mainAboutProjectDescription .descriptionParagraphSection p {
+  color: #181818;
+  text-align: left;
+}
+@media (min-width: 0px) {
+  .mainAboutProjectDescription .descriptionParagraphSection p {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription .descriptionParagraphSection p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainAboutProjectDescription .descriptionParagraphSection p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription .descriptionParagraphSection {
+    width: 60%;
+    margin-left: auto;
+  }
+}
+.mainAboutProjectDescription .descriptionParagraphSection :last-child {
+  font-weight: 700;
+}
+.mainAboutProjectDescription img {
+  bottom: 0%;
+}
+@media (min-width: 0px) {
+  .mainAboutProjectDescription img {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription img {
+    position: absolute;
+    left: -150px;
+    width: 500px;
+  }
+}
+@media (min-width: 1023px) {
+  .mainAboutProjectDescription img {
+    left: -100px;
+    width: 560px;
+  }
+}
+@media (min-width: 2549px) {
+  .mainAboutProjectDescription img {
+    left: -120px;
+    width: 670px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+.mainAboutProjectDescription .descriptionNameSection {
+  background: linear-gradient(90deg, #1bb147 10.22%, #018ed5 104.68%);
+  width: 100%;
+  padding: 2%;
+}
+.mainAboutProjectDescription .descriptionNameSection span {
+  display: block;
+  color: #fff;
+}
+@media (min-width: 767px) {
+  .mainAboutProjectDescription .descriptionNameSection span {
+    width: 60%;
+    text-align: left;
+    margin-left: auto;
+    padding-inline: 3vw;
+  }
+}
+.mainAboutProjectDescription .descriptionNameSection :first-child {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.mainAboutCompanyDescription {
+  background-image: url("../../assets/images/companyDescrpBackGround.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  padding-block: 4%;
+  background-repeat: no-repeat;
+}
+.mainAboutCompanyDescription h2 {
+  background: -webkit-linear-gradient(0deg, #1bb147 40.22%, #018ed5 60.68%);
+  background-clip: text;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.9em;
+  font-weight: 800;
+}
+@media (min-width: 0px) {
+  .mainAboutCompanyDescription h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription h2 {
+    text-align: left;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-inline: 6vw;
+  }
+}
+@media (min-width: 0px) {
+  .mainAboutCompanyDescription h2 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription h2 {
+    font-size: 1.9em;
+  }
+}
+.mainAboutCompanyDescription .descriptionParagraphSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.mainAboutCompanyDescription .descriptionParagraphSection p {
+  color: #181818;
+  text-align: left;
+}
+@media (min-width: 0px) {
+  .mainAboutCompanyDescription .descriptionParagraphSection p {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription .descriptionParagraphSection p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainAboutCompanyDescription .descriptionParagraphSection p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 0px) {
+  .mainAboutCompanyDescription .descriptionParagraphSection {
+    padding-inline: 3vw;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription .descriptionParagraphSection {
+    width: 65%;
+    padding-left: 6vw;
+    padding-right: 0;
+  }
+}
+.mainAboutCompanyDescription .descriptionParagraphSection p {
+  color: #fff;
+  line-height: 150%;
+}
+.mainAboutCompanyDescription .descrptionButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
+.mainAboutCompanyDescription .descrptionButtonWrapper button {
+  background-color: #FA0606;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+@media (min-width: 0px) {
+  .mainAboutCompanyDescription .descrptionButtonWrapper button {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription .descrptionButtonWrapper button {
+    font-size: 1em;
+  }
+}
+@media (min-width: 0px) {
+  .mainAboutCompanyDescription .descrptionButtonWrapper button {
+    width: 80%;
+    padding: 3%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription .descrptionButtonWrapper button {
+    width: 40%;
+    padding: 2%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAboutCompanyDescription .descrptionButtonWrapper button {
+    width: 30%;
+    padding: 2%;
+  }
+}
+.mainAboutCompanyDescription .descriptionSmallSizeParagraph {
+  font-size: 0.85em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  padding-inline: 3vw;
+}
+.mainAboutCompanyDescription .descriptionSmallSizeParagraph span {
+  display: block;
+}
+
+.mainCommentContainer {
+  background-color: #fff;
+  padding-block: 3vh;
+}
+.mainCommentContainer h2 {
+  background: -webkit-linear-gradient(0deg, #1bb147 40.22%, #018ed5 60.68%);
+  background-clip: text;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.9em;
+  font-weight: 800;
+  text-align: center;
+}
+@media (min-width: 0px) {
+  .mainCommentContainer h2 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 767px) {
+  .mainCommentContainer h2 {
+    font-size: 1.9em;
+  }
+}
+.mainCommentContainer .commentSliderContainer {
+  padding-top: 3vh;
+  padding-inline: 2vw;
+}
+.mainCommentContainer .commentSliderContainer .commentSliderItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+  text-align: center;
+}
+.mainCommentContainer .commentSliderContainer .commentSliderItem img {
+  border-radius: 50%;
+}
+@media (min-width: 0px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem img {
+    width: 100px;
+  }
+}
+@media (min-width: 767px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem img {
+    width: 150px;
+  }
+}
+@media (min-width: 0px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem p {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 767px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem p {
+    font-size: 1.2em;
+  }
+}
+.mainCommentContainer .commentSliderContainer .commentSliderItem .commentItemAvatarInfo {
+  color: #181818;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 767px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem .commentItemAvatarInfo {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainCommentContainer .commentSliderContainer .commentSliderItem .commentItemAvatarInfo {
+    font-size: 1.2em;
+  }
+}
+.mainCommentContainer .commentSliderContainer .commentSliderItem .commentItemAvatarInfo .commentItemAvatarAge {
+  text-transform: none;
+  display: block;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.mainCommentContainer .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 6vh;
+}
+@media (min-width: 0px) {
+  .mainCommentContainer .slick-dots {
+    gap: 5vw;
+  }
+}
+@media (min-width: 1023px) {
+  .mainCommentContainer .slick-dots {
+    gap: 2vw;
+  }
+}
+.mainCommentContainer .slick-dots li {
+  background: rgba(24, 24, 24, 0.1);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.mainCommentContainer .slick-dots li.slick-active {
+  background: linear-gradient(0deg, #1bb147 10.22%, #018ed5 104.68%);
+}
+.mainCommentContainer .slick-dots li button {
+  outline: none;
+  border: none;
+  width: 100%;
+  color: transparent;
+  cursor: pointer;
+  background: transparent;
+}
+
+.mainPaymentComponent {
+  background-color: #0048b1;
+  color: #fff;
+  padding-inline: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding-block: 4vh;
+}
+.mainPaymentComponent h2 {
+  text-align: center;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 1023px) {
+  .mainPaymentComponent h2 {
+    font-size: 1.9em;
+  }
+}
+.mainPaymentComponent :nth-child(2) {
+  text-align: center;
+}
+.mainPaymentComponent span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+@media (min-width: 0px) {
+  .mainPaymentComponent span {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 767px) {
+  .mainPaymentComponent span {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainPaymentComponent span {
+    font-size: 1em;
+  }
+}
+.mainPaymentComponent .paymentButtonWrapper {
+  display: flex;
+  justify-content: center;
+  padding-block: 3vh;
+  padding-inline: 10%;
+}
+.mainPaymentComponent .paymentButtonWrapper button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0048b1;
+}
+@media (min-width: 0px) {
+  .mainPaymentComponent .paymentButtonWrapper button {
+    width: 100%;
+    padding: 4%;
+  }
+}
+@media (min-width: 767px) {
+  .mainPaymentComponent .paymentButtonWrapper button {
+    width: 45%;
+    padding: 3%;
+  }
+}
+@media (min-width: 1023px) {
+  .mainPaymentComponent .paymentButtonWrapper button {
+    font-size: 1em;
+  }
+}
+.mainPaymentComponent .paymentSliderWrapper {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.mainPaymentComponent .paymentSliderWrapper .irs {
+  width: 100%;
+}
+.mainPaymentComponent .paymentSliderWrapper .irs .irs-handle {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.mainPaymentComponent .paymentSliderWrapper .irs .irs-single {
+  background-color: #fff;
+  color: #181818;
+  font-weight: 400;
+}
+.mainPaymentComponent .paymentSliderWrapper .paymentSliderMaxMin {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.mainPaymentComponent .paymentSliderWrapper .paymentSliderMaxMin span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+@media (min-width: 0px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderMaxMin span {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 767px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderMaxMin span {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderMaxMin span {
+    font-size: 1em;
+  }
+}
+.mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned {
+  display: flex;
+  flex-direction: column;
+}
+.mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  padding-block: 1vh;
+}
+@media (min-width: 0px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned span {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 767px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned span {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned span {
+    font-size: 1em;
+  }
+}
+.mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned input {
+  width: 50%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 1023px) {
+  .mainPaymentComponent .paymentSliderWrapper .paymentSliderEarned input {
+    font-size: 1em;
+  }
+}
+
+.mainAdvantagesComponent {
+  background-image: url("../../assets/images/tubesBackGround.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  gap: 4vh;
+  padding-block: 4vh;
+  color: #fff;
+}
+@media (min-width: 0px) {
+  .mainAdvantagesComponent {
+    flex-direction: column;
+    padding-inline: 4vw;
+    padding-block: 4vh;
+  }
+}
+@media (min-width: 767px) {
+  .mainAdvantagesComponent {
+    flex-direction: row;
+    padding-inline: 6vw;
+    padding-block: 10vh;
+  }
+}
+.mainAdvantagesComponent h3 {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.mainAdvantagesComponent .advantagesList {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6%;
+  gap: 4vh;
+}
+.mainAdvantagesComponent .advantagesList .advantagesListItem {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.mainAdvantagesComponent .advantagesList .advantagesListItem .advantagesItemImage {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+}
+@media (min-width: 0px) {
+  .mainAdvantagesComponent .advantagesList .advantagesListItem .advantagesItemSign {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1023px) {
+  .mainAdvantagesComponent .advantagesList .advantagesListItem .advantagesItemSign {
+    font-size: 1em;
+  }
+}
+.mainAdvantagesComponent .advantagesProfitWrapper {
+  background-color: #fff;
+  color: #181818;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 15px;
+}
+@media (min-width: 0px) {
+  .mainAdvantagesComponent .advantagesProfitWrapper {
+    padding: 4%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAdvantagesComponent .advantagesProfitWrapper {
+    padding: 2%;
+  }
+}
+@media (min-width: 767px) {
+  .mainAdvantagesComponent .advantagesProfitWrapper h3 {
+    padding-left: 3%;
+    font-size: 1.5em;
+  }
+}
+.mainAdvantagesComponent .advantagesProfitWrapper ol {
+  padding-block: 2vh;
+  padding-left: 12%;
+}
+@media (min-width: 0px) {
+  .mainAdvantagesComponent .advantagesProfitWrapper ol li {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+}
+@media (min-width: 1023px) {
+  .mainAdvantagesComponent .advantagesProfitWrapper ol li {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
+
+.footerWrapper {
+  display: flex;
+  gap: 2vh;
+  border-top: 4px solid #cbc9c9;
+  margin-top: 2vh;
+  padding-top: 1vh;
+  color: #cbc9c9;
+  line-height: 150%;
+}
+@media (min-width: 0px) {
+  .footerWrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 767px) {
+  .footerWrapper {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 767px) {
+  .footerWrapper {
+    padding-bottom: 3vh;
+  }
+}
+.footerWrapper .footerAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+.footerWrapper .footerSocial {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.footerWrapper .footerSocial a {
+  height: 30px;
+  width: 30px;
+}
+.footerWrapper .footerSocial .footerSocialLinkedIn {
+  background-color: #1076a7;
+}
+.footerWrapper .footerSocial .footerSocialTwitter {
+  background-color: #1fa1ef;
+}
+.footerWrapper .footerLinks {
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  align-items: center;
+}
+.footerWrapper .footerLinks a {
+  color: #4ab6dc;
+}
+@media (min-width: 0px) {
+  .footerWrapper .footerLinks a {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1023px) {
+  .footerWrapper .footerLinks a {
+    font-size: 1em;
+  }
+}
+.footerWrapper span {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

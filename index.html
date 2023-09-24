@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pol">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official decision by the Ministry of Climate in Poland confirms the alignment of nuclear power plant investments with public interest and national energy policy.">
+    <meta name="keywords"
+        content="elektrownia jądrowa, Polski Program Rozwoju Energii Jądrowej, polityka energetyczna, interes publiczny, inwestycje, energia jądrowa, cel polityki klimatycznej">
+    <meta name="author" content="Traffic Devils">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <title>TD-App</title>
+</head>
+
+<body>
+    <header class="headerComponent">
+
+        <article class="headerBackDesign">
+            <h1>Polskie Elektrownie Jądrowe sp. z o. o.</h1>
+            <section class="hamburgerWrapper">
+                <span class="hamburgerBar"></span>
+                <span class="hamburgerBar"></span>
+                <span class="hamburgerBar"></span>
+            </section>
+        </article>
+       
+            <nav class="headerNavigation">
+                <ul class="navigationMenu">
+                    <li class="menuItem">
+                        <a href="#" onclick="scrollToDiv('mainAboutProjectDescrp')" class="menuLink">O projekcie</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="#" onclick="scrollToDiv('mainAboutCompanyDescription')" class="menuLink">O spółce</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="#" onclick="scrollToDiv('mainCommentContainer')" class="menuLink">Opinie</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="#" onclick="scrollToDiv('mainPaymentComponent')" class="menuLink">Dla inwestorów</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="#" onclick="scrollToDiv('mainAdvantagesComponent')" class="menuLink"> Jak zacząć? </a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+                function scrollToDiv(sectionId) {
+                    var section = document.getElementById(sectionId);
+                    section.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+                }
+            </script>
+
+        <script src="/scripts/hamburgerScript.js"></script>
+    </header>
+    <main>
+        <div class="container">
+            <div class="mainInformationWrapper">
+                <section class="mainInformationComponent">
+                    <h2>Dzięki wsparciu </h2>
+                    <section class="informationPartners">
+                        <img id="imageOfInformation_1" src="/assets/images/imageOfInfo_1.png"
+                            alt="Minestri of Climate and Environment">
+                        <img id="imageOfInformation_2" src="/assets/images/imageOfInfo_2.png" alt="SEJM Rzeczpospolita">
+                    </section>
+                    <div class="informationVideoWrapper">
+                        <iframe src="" frameborder="0" class="informationVideo"></iframe>
+                    </div>
+                </section>
+                <div class="mainFormWrapper">
+                    <section class="mainFormComponent">
+                        <form action="#">
+                            <label><span></span>Zarejestruj się<span></span></label>
+                            <input placeholder="Imię" type="text">
+                            <input placeholder="Nazwisko" type="text">
+                            <input placeholder="E-mail" type="email">
+                            <input id="phone_1" type="tel">
+                            <button>zarejestruj się</button>
+
+                            <div class="formBackGroundDesign"></div>
+                            <div id="second_form_design" class="formBackGroundDesign"></div>
+
+
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+                            <script>
+                                const input_1 = document.querySelector("#phone_1");
+                                window.intlTelInput(input_1, {
+                                    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+                                });
+                                const iti_1 = window.intlTelInput(input_1, {
+                                    separateDialCode: true, showFlags: false, customPlaceholder: function () { return '' }
+                                });
+                            </script>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div id="mainAboutProjectDescrp" class="mainAboutProjectDescription">
+                <div>
+                    <h2>O projekcie</h2>
+                </div>
+                <section class="descriptionParagraphSection">
+                    <p>Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie potwierdza, że inwestycje w
+                        pierwszą elektrownię jądrowe w Polsce są zgodne z interesem publicznym oraz polityką prowadzoną
+                        przez państwo, zwłaszcza polityką energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                        korzyści z energii wytwarzanej przez elektrownię jądrowe.</p>
+                    <p>"Planowany projekt realizuje Polski Program Rozwoju Energii Jądrowej, jest zgodny z Polityką
+                        Energetyczną Polski do 2040 roku oraz odpowiada celom polityki klimatycznej Unii Europejskiej" -
+                        głosi komunikat.</p>
+                    <p>Aby rozpocząć pracę, prosimy o zarejestrowanie się na tej stronie i dokonanie minimalnej wpłaty w
+                        wysokości 1100 złotych.</p>
+                </section>
+                <img src="/assets/images/mateushImageFace.png"
+                    alt="Mateusz Berger Prezes spółki Polskie Elektrownie Jądrowe (PEJ)">
+                <section class="descriptionNameSection">
+                    <span>Mateusz Berger</span>
+                    <span>Prezes spółki Polskie Elektrownie Jądrowe (PEJ)</span>
+                </section>
+            </div>
+            <div id="mainAboutCompanyDescription" class="mainAboutCompanyDescription">
+                <h2>O spółce</h2>
+                <section class="descriptionParagraphSection">
+                    <p>Jak zaznaczono, elektrownia jądrowe ma na celu zrekompensowanie przewidywanego wzrostu
+                        zapotrzebowania na energię elektryczną, stabilizację dostaw energii oraz dywersyfikację źródeł
+                        energii w kraju.</p>
+                    <p>Zgodnie z zezwoleniem, inwestor może złożyć podania o dalsze decyzje administracyjne,
+                        zwłaszcza dotyczące określenia lokalizacji. Według Ministerstwa Klimatu i Środowiska, decyzję
+                        popiera 86% Polaków, z których większość wyraża zgodę na budowę elektrowni atomowej w pobliżu
+                        swojego miejsca zamieszkania.</p>
+                    <p>W ramach Polskiego Programu Rozwoju Energii Jądrowej planowana jest budowa dwóch elektrowni
+                        atomowych.</p>
+                </section>
+                <div class="descrptionButtonWrapper"> <button>Zarejestruj się i zarabiaj</button></div>
+                <p class="descriptionSmallSizeParagraph"><span>Dane rejestrowe spółki:</span>
+                    Polskie Elektrownie Jądrowe spółka z ograniczoną odpowiedzialnością z siedzibą w Warszawie, ul.
+                    Mokotowska 49, 00-542 Warszawa, spółka wpisana do Rejestru przedsiębiorców Krajowego Rejestru
+                    Sądowego prowadzonego przez Sąd Rejonowy dla m. st. Warszawy w Warszawie, XII Wydział Gospodarczy
+                    Krajowego Rejestru Sądowego pod numerem KRS: 0000347416, kapitał zakładowy 2.948.201.430 zł, NIP:
+                    701 021 82 99, REGON: 142242032.</p>
+            </div>
+            <div id="mainCommentContainer" class="mainCommentContainer">
+                <h2>Opinie</h2>
+                <div class="commentSliderContainer">
+                    <div class="commentSliderItem">
+                        <img src="./assets/images/mateushAvatarComment.png" alt="">
+                        <span class="commentItemAvatarInfo">Mateusz morawecki<span class="commentItemAvatarAge">39 lat -
+                                Kierowca</span></span>
+                        <p>Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie potwierdza, że inwestycje w
+                            pierwszą elektrownię
+                            jądrowe w Polsce są zgodne z interesem publicznym oraz polityką prowadzoną przez państwo,
+                            zwłaszcza polityką energetyczną. Każdy obywatel Polski będzie mógł czerpać korzyści z
+                            energii wytwarzanej przez elektrownię jądrowe.</p>
+                    </div>
+                    <div class="commentSliderItem">
+                        <img src="./assets/images/mateushAvatarComment.png" alt="">
+                        <span class="commentItemAvatarInfo">Mateusz morawecki<span class="commentItemAvatarAge">39 lat -
+                                Kierowca</span></span>
+                        <p>Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie potwierdza, że inwestycje w
+                            pierwszą elektrownię
+                            jądrowe w Polsce są zgodne z interesem publicznym oraz polityką prowadzoną przez państwo,
+                            zwłaszcza polityką energetyczną. Każdy obywatel Polski będzie mógł czerpać korzyści z
+                            energii wytwarzanej przez elektrownię jądrowe.</p>
+                    </div>
+                    <div class="commentSliderItem">
+                        <img src="./assets/images/mateushAvatarComment.png" alt="">
+                        <span class="commentItemAvatarInfo">Mateusz morawecki<span class="commentItemAvatarAge">39 lat -
+                                Kierowca</span></span>
+
+                        <p>Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie potwierdza, że inwestycje w
+                            pierwszą elektrownię
+                            jądrowe w Polsce są zgodne z interesem publicznym oraz polityką prowadzoną przez państwo,
+                            zwłaszcza polityką energetyczną. Każdy obywatel Polski będzie mógł czerpać korzyści z
+                            energii wytwarzanej przez elektrownię jądrowe.</p>
+                    </div>
+
+
+                </div>
+                <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                <script type="text/javascript" src="./scripts/slick.min.js"></script>
+                <script type="text/javascript" src="./scripts/slider.js"></script>
+
+
+            </div>
+            <div id="mainPaymentComponent" class="mainPaymentComponent">
+                <h2>ile będę zarabiał?</h2>
+                <span>Twoja inwestycja</span>
+                <div class="paymentSliderWrapper">
+                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                    <div class="paymentSliderMaxMin">
+                        <span>1100 PLN</span>
+                        <span>500 000+ PLN</span>
+                    </div>
+                    <div class="paymentSliderEarned">
+                        <span>Zarobisz</span>
+                        <input id="inputPaymentSlider" type="text" readonly>
+                    </div>
+                </div>
+                <div class="paymentButtonWrapper">
+                    <button>Dołącz do nas</button>
+                </div>
+
+
+
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+                <script type="text/javascript" src="./scripts/sliderPayment.js"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+            </div>
+            <div id="mainAdvantagesComponent" class="mainAdvantagesComponent">
+                <section>
+                    <h3>Dlaczego jest to kirzystne dla zwykłych obywateli</h3>
+                    <section class="advantagesList">
+                        <div class="advantagesListItem">
+                            <div class="advantagesItemImage"><img width="30" height="30"
+                                    src="https://img.icons8.com/ios-filled/50/0048b1/combo-chart--v1.png"
+                                    alt="combo-chart--v1" /></div>
+                            <span class="advantagesItemSign">Nowy projekt, który historycznie wpłynie na gospodarkę
+                                kraju i każdego obywatela.</span>
+                        </div>
+                        <div class="advantagesListItem">
+                            <div class="advantagesItemImage"><img width="30" height="30"
+                                    src="https://img.icons8.com/0048b1/wired/64/get-cash.png" alt="get-cash" /></div>
+                            <span class="advantagesItemSign">Zarabiaj od 15 000 złotych już od pierwszego
+                                miesiąca</span>
+                        </div>
+                        <div class="advantagesListItem">
+                            <div class="advantagesItemImage"><img width="30" height="30"
+                                    src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/0048b1/external-calculator-finance-kiranshastry-lineal-kiranshastry.png"
+                                    alt="external-calculator-finance-kiranshastry-lineal-kiranshastry" /></div>
+                            <span class="advantagesItemSign">Możliwość szybkiej wypłaty zarobków za pomocą dowolnego
+                                wygodnego systemu płatności lub karty bankowej</span>
+                        </div>
+                    </section>
+                </section>
+                <section class="advantagesProfitWrapper">
+                    <h3>Jak zacząć zarabiać dzięki energii jądrowej?</h3>
+                    <ol>
+                        <li>Wypełnij formularz rejestracyjny na tej stronie.</li>
+                        <li>Odbierz telefon od naszego menedżera, aby potwierdzić rejestrację i dalszą pracę na
+                            platformie.</li>
+                        <li>Zarabiaj pasywnie co miesiąc dzięki inwestycji w wysokości 1100 złotych, gdy rozpoczniesz
+                            współpracę z naszym projektem</li>
+                    </ol>
+                </section>
+            </div>
+            <div class="mainFormWrapper">
+                <section class="mainFormComponent">
+                    <form action="#">
+                        <label><span></span>Zarejestruj się<span></span></label>
+                        <input placeholder="Imię" type="text">
+                        <input placeholder="Nazwisko" type="text">
+                        <input placeholder="E-mail" type="email">
+                        <input id="phone_2" type="tel">
+                        <button>zarejestruj się</button>
+
+                        <div class="formBackGroundDesign"></div>
+                        <div id="second_form_design" class="formBackGroundDesign"></div>
+
+
+                        <script
+                            src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+                        <script>
+                            const input_2 = document.querySelector("#phone_2");
+                            window.intlTelInput(input_2, {
+                                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+                            });
+                            const iti_2 = window.intlTelInput(input_2, {
+                                separateDialCode: true, showFlags: false, customPlaceholder: function () { return '' }
+                            });
+                        </script>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <section class="footerWrapper">
+                <section class="footerAddress">
+                    <span>Polskie Elektrownie Jądrowe sp. z o.o.</span>
+                    <span>Aleje Jerozolimskie 132/136, 02-305 Warszawa</span>
+                    <span>Tel.: (+48 22) 340 2980</span>
+                </section>
+                <section class="footerSocial">
+                    <a href="#" class="footerSocialLinkedIn"><img width="30" height="30"
+                            src="https://img.icons8.com/ffffff/windows/32/linkedin-2.png" alt="linkedin-2" /></a>
+                    <a href="#" class="footerSocialTwitter"><img width="30" height="30"
+                            src="https://img.icons8.com/ffffff/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                </section>
+                <section class="footerLinks">
+                    <a href="#">Kontakt</a>
+                    <a href="#">Polityka prywatności</a>
+                </section>
+            </section>
+        </div>
+    </footer>
+</body>
